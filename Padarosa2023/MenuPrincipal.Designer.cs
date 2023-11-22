@@ -43,20 +43,20 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Montserrat", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(181, 19);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(542, 48);
+            this.lblTitulo.Size = new System.Drawing.Size(497, 39);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Padarosa :: Sistema Comercial";
             // 
             // lblSaudacao
             // 
             this.lblSaudacao.AutoSize = true;
-            this.lblSaudacao.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaudacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaudacao.Location = new System.Drawing.Point(32, 100);
             this.lblSaudacao.Name = "lblSaudacao";
-            this.lblSaudacao.Size = new System.Drawing.Size(99, 22);
+            this.lblSaudacao.Size = new System.Drawing.Size(92, 20);
             this.lblSaudacao.TabIndex = 1;
             this.lblSaudacao.Text = "Olá, NOME!";
             // 
@@ -70,6 +70,7 @@
             this.btnComandas.TabIndex = 2;
             this.btnComandas.Text = "Comandas";
             this.btnComandas.UseVisualStyleBackColor = true;
+            this.btnComandas.Click += new System.EventHandler(this.btnComandas_Click);
             // 
             // btnProdutos
             // 

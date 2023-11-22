@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -43,6 +44,12 @@ namespace Padarosa2023
         private void btnProdutos_Click(object sender, EventArgs e)
         {
             Views.GerenciamentoProdutos janela = new Views.GerenciamentoProdutos(usuario);
+            janela.Show();
+        }
+
+        private void btnComandas_Click(object sender, EventArgs e)
+        {
+            Views.GerenciamentoComandas janela = new Views.GerenciamentoComandas(usuario);
             janela.Show();
         }
     }
