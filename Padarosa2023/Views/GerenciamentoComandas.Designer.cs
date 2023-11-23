@@ -30,11 +30,11 @@
         {
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
             this.grbInformacoes = new System.Windows.Forms.GroupBox();
+            this.lblCodProduto = new System.Windows.Forms.Label();
+            this.txbCodProduto = new System.Windows.Forms.TextBox();
+            this.txbComandas = new System.Windows.Forms.TextBox();
             this.btnContinuar = new System.Windows.Forms.Button();
             this.lblComandas = new System.Windows.Forms.Label();
-            this.txbComandas = new System.Windows.Forms.TextBox();
-            this.txbCodProduto = new System.Windows.Forms.TextBox();
-            this.lblCodProduto = new System.Windows.Forms.Label();
             this.grbLancamento = new System.Windows.Forms.GroupBox();
             this.lblQuantidade = new System.Windows.Forms.Label();
             this.txbQuantidade = new System.Windows.Forms.TextBox();
@@ -43,6 +43,7 @@
             this.lblProduto = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblSaudacao = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             this.grbInformacoes.SuspendLayout();
             this.grbLancamento.SuspendLayout();
@@ -77,6 +78,30 @@
             this.grbInformacoes.TabStop = false;
             this.grbInformacoes.Text = "Informações";
             // 
+            // lblCodProduto
+            // 
+            this.lblCodProduto.AutoSize = true;
+            this.lblCodProduto.Location = new System.Drawing.Point(10, 82);
+            this.lblCodProduto.Name = "lblCodProduto";
+            this.lblCodProduto.Size = new System.Drawing.Size(69, 13);
+            this.lblCodProduto.TabIndex = 9;
+            this.lblCodProduto.Text = "Cód Produto:";
+            // 
+            // txbCodProduto
+            // 
+            this.txbCodProduto.Location = new System.Drawing.Point(85, 82);
+            this.txbCodProduto.Name = "txbCodProduto";
+            this.txbCodProduto.ReadOnly = true;
+            this.txbCodProduto.Size = new System.Drawing.Size(100, 20);
+            this.txbCodProduto.TabIndex = 8;
+            // 
+            // txbComandas
+            // 
+            this.txbComandas.Location = new System.Drawing.Point(86, 40);
+            this.txbComandas.Name = "txbComandas";
+            this.txbComandas.Size = new System.Drawing.Size(99, 20);
+            this.txbComandas.TabIndex = 7;
+            // 
             // btnContinuar
             // 
             this.btnContinuar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -98,31 +123,9 @@
             this.lblComandas.TabIndex = 0;
             this.lblComandas.Text = "Comandas :";
             // 
-            // txbComandas
-            // 
-            this.txbComandas.Location = new System.Drawing.Point(86, 40);
-            this.txbComandas.Name = "txbComandas";
-            this.txbComandas.Size = new System.Drawing.Size(99, 20);
-            this.txbComandas.TabIndex = 7;
-            // 
-            // txbCodProduto
-            // 
-            this.txbCodProduto.Location = new System.Drawing.Point(85, 82);
-            this.txbCodProduto.Name = "txbCodProduto";
-            this.txbCodProduto.Size = new System.Drawing.Size(100, 20);
-            this.txbCodProduto.TabIndex = 8;
-            // 
-            // lblCodProduto
-            // 
-            this.lblCodProduto.AutoSize = true;
-            this.lblCodProduto.Location = new System.Drawing.Point(10, 82);
-            this.lblCodProduto.Name = "lblCodProduto";
-            this.lblCodProduto.Size = new System.Drawing.Size(69, 13);
-            this.lblCodProduto.TabIndex = 9;
-            this.lblCodProduto.Text = "Cód Produto:";
-            // 
             // grbLancamento
             // 
+            this.grbLancamento.Controls.Add(this.btnCancelar);
             this.grbLancamento.Controls.Add(this.lblQuantidade);
             this.grbLancamento.Controls.Add(this.txbQuantidade);
             this.grbLancamento.Controls.Add(this.txbProduto);
@@ -156,6 +159,7 @@
             // 
             this.txbProduto.Location = new System.Drawing.Point(86, 40);
             this.txbProduto.Name = "txbProduto";
+            this.txbProduto.ReadOnly = true;
             this.txbProduto.Size = new System.Drawing.Size(99, 20);
             this.txbProduto.TabIndex = 7;
             // 
@@ -163,9 +167,9 @@
             // 
             this.btnLancar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnLancar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLancar.Location = new System.Drawing.Point(10, 125);
+            this.btnLancar.Location = new System.Drawing.Point(10, 108);
             this.btnLancar.Name = "btnLancar";
-            this.btnLancar.Size = new System.Drawing.Size(199, 56);
+            this.btnLancar.Size = new System.Drawing.Size(199, 35);
             this.btnLancar.TabIndex = 6;
             this.btnLancar.Text = "Lançar";
             this.btnLancar.UseVisualStyleBackColor = false;
@@ -197,6 +201,18 @@
             this.lblSaudacao.Name = "lblSaudacao";
             this.lblSaudacao.Size = new System.Drawing.Size(0, 13);
             this.lblSaudacao.TabIndex = 7;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Brown;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.Location = new System.Drawing.Point(10, 149);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(199, 35);
+            this.btnCancelar.TabIndex = 10;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // GerenciamentoComandas
             // 
@@ -238,5 +254,6 @@
         private System.Windows.Forms.Label lblProduto;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblSaudacao;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

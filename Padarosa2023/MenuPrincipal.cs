@@ -52,5 +52,11 @@ namespace Padarosa2023
             Views.GerenciamentoComandas janela = new Views.GerenciamentoComandas(usuario);
             janela.Show();
         }
+
+        private void btnCaixa_Click(object sender, EventArgs e)
+        {
+            Views.Caixa janela = new Views.Caixa(usuario);
+            janela.Show();
+        }
     }
 }

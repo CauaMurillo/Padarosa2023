@@ -1,10 +1,12 @@
-﻿using MySqlConnector;
+﻿using EasyEncryption;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Padarosa2023.Classes
 {
@@ -31,6 +33,7 @@ namespace Padarosa2023.Classes
             conexaoBD.Desconectar(con);
             return tabela;
         }
+        
     }
    
 }
